@@ -1,0 +1,57 @@
+/*
+Theme Name: Kittens!
+Theme URI: http://yikesinc.com
+Author: YIKES, Inc.
+Author URI: http://yikesinc.com
+Description: A theme to teach designers about Custom Post Types. This just the css relevant to the CPTs and not all the css for the theme. Just cutting and pasting into your style.css will not cut it -- it also uses Twitter Bootstrap for styling.
+Version: 1.0
+License: GNU General Public License
+Tags: Development, Starter
+*/
+
+
+/* ==========================================================================
+   Global
+   ========================================================================== */
+
+body.tax-custom_cat_color  {
+	background: #fff url('images/rainbow.gif');
+}
+
+/* Bootstrap Stuff */
+
+.btn-info {color: #FFFFFF !important;}
+ 
+ 
+
+/* ==========================================================================
+   Content
+   ========================================================================== */
+
+/* Styles for our Kittens CPT */
+
+.page-template-kittens-php .thumbnail, .archive .thumbnail  {
+	width: 200px;
+	height: 352px;
+}
+
+.kittens-excerpt {
+	height: 92px;
+}
+
+.attachment-kittens-thumb {border: 1px solid #ddd;}
+
+.attachment-kittens-single {
+	float: right;
+	margin: 0 0 20px 20px;
+	padding: 4px;
+    background-color: #fff;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);}
+	
+#backlink {margin: 40px 0; font-size: .86em; font-weight: bold;}
+
+.rainbow-kittens {}
