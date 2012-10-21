@@ -73,10 +73,10 @@ function custom_post_kittens() {
     	)
     );   
     	
-	// now let's add more custom categories (these act like categories)
+	// now let's add custom tags (these act like tags)
     register_taxonomy( 'custom_cat_color', 
     	array('wcp_kittens'), /* this is the name of your CPT so these custom categories are associated with it */
-    	array('hierarchical' => false,     /* if this is true it acts like categories */             
+    	array('hierarchical' => false,     /* if this is false it acts like tags */             
     		'labels' => array(
     			'name' => __( 'Colors' ), /* name of the custom taxonomy */
     			'singular_name' => __( 'Color' ), /* single taxonomy name */
@@ -95,7 +95,7 @@ function custom_post_kittens() {
     	)
     );   
     
-	// now let's add custom tags (these act like tags)
+	// now let's add more custom tags (these act like tags)
     register_taxonomy( 'custom_tag_markings', 
     	array('wcp_kittens'), /* this is the name of your CPT so these custom tags are associated with it */
     	array('hierarchical' => false,    /* if this is false, it acts like tags */                
