@@ -1,7 +1,7 @@
 <?php
 /**
  * The Template for displaying all single Kitten posts.
- * It just a copy of single.php modified to show kittney stuff.
+ * It's just a copy of single.php modified to show kittney stuff.
  */
 
 get_header(); ?>
