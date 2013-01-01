@@ -36,7 +36,7 @@ function custom_post_kittens() {
 			'rewrite' => array('slug'=>'kittens'), /* you can define the slug for your CPT, by default it will be your CPT's name which isn't always pretty */ 
 			'menu_icon' => get_stylesheet_directory_uri() . '/inc/images/kitten-icon.png', /* the icon for the custom post type menu 16px square */
 			/* the next one is important, it tells what's enabled in the post editor. Your options are:
-			'title', 'editor', 'author', 'thumbnail', 'excerpt', 'trackbacks', 'custom-fields', 'comments', 'revisions', 'sticky' */
+			'title', 'editor', 'author', 'thumbnail', 'excerpt', 'trackbacks', 'custom-fields', 'comments', 'revisions', 'page-attributes', 'post-formats' */
 			'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt', 'revisions')
 	 	) /* end of options */
 		
