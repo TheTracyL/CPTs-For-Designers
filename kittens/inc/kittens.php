@@ -1,11 +1,4 @@
 <?php
-/* Bones Custom Post Type Example This page walks you through creating a custom post type 
-and taxonomies. You can edit this one or copy the following code to create another one. 
-
-Developed by: Eddie Machado with some YIKES, Inc. stuff thrown in.
-URL: http://themble.com/bones/ and http://yikesinc.com
-*/
-
 
 // let's create the function for the custom type "Kittens"
 function custom_post_kittens() { 
@@ -116,34 +109,6 @@ function custom_post_kittens() {
 			'rewrite' => array( 'slug' => 'markings' ), /* define the slug, by default it will be your taxonomy's name which isn't always pretty */
     	)
     ); 
-	
-	
-	// Bonus: now let's customize the admin columns for Kittens
-
-	add_filter("manage_edit-wcp_kittens_columns", "wcp_kittens_edit_columns");   
-	  
-	function wcp_kittens_edit_columns($columns){  
-        $columns = array(  
-			'cb' => '<input type="checkbox" />',
-			'title' => __( 'Kitten Name' ),
-            'description' => 'Kitten Description',  
-			'date' => __('Date')
-        );  
-  
-        return $columns;  
-	}  
-
-	add_action( 'manage_wcp_kittens_posts_custom_column', 'manage_wcp_kittens_columns'); 
-	  
-	function manage_wcp_kittens_columns($column){  
-        global $post;  
-        switch ($column)  
-        {  
-			/* If displaying the 'description' column. */
-            case "description":  
-                the_excerpt();  
-                break;  
-        }  	
 }
 	
 
