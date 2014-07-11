@@ -27,7 +27,7 @@ function custom_post_kittens() {
 			'show_ui' => true, /* Do you want this CPT to have an admin in the back-end? */
 			'menu_position' => 20, /* this is what order you want it to appear in on the left hand side menu */ 
 			'rewrite' => array('slug'=>'kittens'), /* you can define the slug for your CPT, by default it will be your CPT's name which isn't always pretty */ 
-			'menu_icon' => get_stylesheet_directory_uri() . '/inc/images/kitten-icon.png', /* the icon for the custom post type menu 16px square */
+            'menu_icon' => 'dashicons-format-video', /* the icon for the custom post type menu using Dashicons http://melchoyce.github.io/dashicons/ */
 			/* the next one is important, it tells what's enabled in the post editor. Your options are:
 			'title', 'editor', 'author', 'thumbnail', 'excerpt', 'trackbacks', 'custom-fields', 'comments', 'revisions', 'page-attributes', 'post-formats' */
 			'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt', 'revisions')
