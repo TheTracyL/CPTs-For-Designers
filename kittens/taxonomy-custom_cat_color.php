@@ -13,7 +13,7 @@ get_header(); ?>
 				<header>
 					<h1 class="page-title">
 						<!-- added a special image to the colors taxonomy page -->
-						<img src="<?php echo get_template_directory_uri(); ?>/images/rainbow_kittens.jpg" class="rainbow-kittens" />
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/rainbow_kittens.jpg" class="rainbow-kittens" />
 						<!-- Hardcoded taxonomy name followed by code that shows the term name -->
 						Color: <?php single_cat_title(); ?>
 					</h1>
