@@ -1,12 +1,11 @@
 /*
-Theme Name: Kittens!
+Theme Name: Kittens
 Theme URI: http://yikesinc.com
-Author: YIKES, Inc.
+Description: The child theme Kittens using the parent theme Twenty Thirteen to demonstrate Custom Post Types
+Author: Tracy Levesque
 Author URI: http://yikesinc.com
-Description: A theme to teach designers about Custom Post Types. This just the css relevant to the CPTs and not all the css for the theme. Just cutting and pasting into your style.css will not cut it -- it also uses Twitter Bootstrap for styling.
-Version: 1.0
-License: GNU General Public License
-Tags: Development, Starter
+Template: twentythirteen
+Version: 1
 */
 
 
@@ -17,10 +16,6 @@ Tags: Development, Starter
 body.tax-custom_cat_color  {
 	background: #fff url('images/rainbow.gif');
 }
-
-/* Bootstrap Stuff */
-
-.btn-info {color: #FFFFFF !important;}
  
  
 
@@ -28,18 +23,47 @@ body.tax-custom_cat_color  {
    Content
    ========================================================================== */
 
-/* Styles for our Kittens CPT */
+/* Styles for our Kittens CPT
+------------------------------ */
 
-.page-template-kittens-php .thumbnail, .archive .thumbnail  {
-	width: 200px;
-	height: 352px;
+/* kittens page */
+
+#kittens-container {
+	width: 90%;
+	margin: 1em auto;
 }
 
-.kittens-excerpt {
-	height: 92px;
-}
+	ul#kittens-list li {
+		border: 1px solid #ccc;
+		display: inline-block;
+		list-style-type: none;
+		margin-right: 1em;
+		max-width: 234px;
+		padding: 1em;
+	}
 
-.attachment-kittens-thumb {border: 1px solid #ddd;}
+		.kitten-thumbnail h3 {
+			margin-bottom: 0.2em;
+		}
+
+
+			.page-template-kittens-php .thumbnail, .archive .thumbnail  {
+				width: 200px;
+				height: 352px;
+			}
+
+			.attachment-kittens-thumb {
+				border: 1px solid #ddd;
+			}
+
+				.kittens-excerpt {
+					height: 92px;
+					overflow: hidden;
+					margin-bottom: 0.6em;
+				}
+
+
+/* Single kittens pages */
 
 .attachment-kittens-single {
 	float: right;
@@ -52,6 +76,9 @@ body.tax-custom_cat_color  {
     -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);}
 	
-#backlink {margin: 40px 0; font-size: .86em; font-weight: bold;}
+
+/* kittens archive pages */
+
+
 
 .rainbow-kittens {}

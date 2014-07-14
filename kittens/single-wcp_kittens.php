@@ -6,8 +6,8 @@
 
 get_header(); ?>
 
-		<div id="primary" class="content-area">
-			<div id="content" class="site-content" role="main">
+	<div id="primary" class="content-area">
+		<div id="content" class="site-content" role="main">			
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
@@ -38,14 +38,12 @@ get_header(); ?>
 					</div><!-- .entry-content -->
 					
 				</article><!-- #post-<?php the_ID(); ?> -->
-				
-				<div id="backlink">
-					&laquo; <a href="http://localhost/tracy/kittens/">Back to Kittens</a>
-				</div>
 
 			<?php endwhile; // end of the loop. ?>
 
-			</div><!-- #content .site-content -->
-		</div><!-- #primary .content-area -->
 
+		</div><!-- #content -->
+	</div><!-- #primary -->
+
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>
